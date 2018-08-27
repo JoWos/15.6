@@ -1,0 +1,92 @@
+body {
+    background-image: url("https://images.pexels.com/photos/2255/black-and-white-city-houses-skyline.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+button {
+    text-align: center;
+    margin: 5px 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 3px #5c636e;
+
+    &.btn-delete {
+        background: #90a4ae;
+        color: #ecfeff;
+
+        &:hover {
+            background: #f7b633;
+        }
+    }
+}
+
+.board {
+    text-align: center;
+
+    .create-column {
+        background: #4ef037;
+
+        &:hover {
+           background: #5c636e;
+           color:#ecfeff;
+        }
+    }
+
+    .column-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 5px;
+    
+        .column {
+            width: 30%;
+            margin: 5px;
+            background: rgba(193, 193, 193, 0.7);
+            
+            .add-card {
+               background: #4ef037;
+
+               &:hover {
+                   background: #feff89;
+               }
+            }
+
+            .column-title {
+                padding: 10px;
+                background: #5c636e;
+                font-size: 30px;
+                text-align: center;
+                color: #f7f6e7;
+            }    
+
+            .column-card-list {
+                list-style-type: none;
+                margin: 0;
+                padding: 5px;
+                min-height: 200px;
+
+                .card {
+                    margin: 5px;
+                    padding: 2px;
+                    
+                    .btn-delete {
+                        float: right;
+                    }
+
+                    .card-description {
+                        min-height: 22px;
+                        background: #feff89;
+                        padding: 7px;
+                        margin: 5px 10px;
+                        box-shadow: 1px 5px 10px #5c636e;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
